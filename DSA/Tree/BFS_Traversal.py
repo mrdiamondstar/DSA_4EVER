@@ -34,13 +34,7 @@ class Solution:
             result.append(level)  # append the level list to the result list      
 
         return result
-    
 
-    def print_level(self,result):
-            for level in result:    
-                for node in level:
-                    print(node, end=" ")
-                print()
                 
 root=TreeNode(1)
 root.left=TreeNode(2)
@@ -51,6 +45,7 @@ root.right.left=TreeNode(6)
 root.right.right=TreeNode(7)
 
 obj=Solution()
+
 result=obj.bfs_levelorder(root)
 print(result)
-obj.print_level(result)
+
