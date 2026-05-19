@@ -4,13 +4,11 @@ class Solution:
         
         self.graph = { 
             1:[1,2],
-            2:[1,1],
+            2:[1,3],
             3:[1,4],
-            4:[2,2],
+            4:[2,5],
             5:[3,2]
             }
-
-    
         
     def bfs(self,first):
         
@@ -20,7 +18,7 @@ class Solution:
         
         while queue:
             node=queue.popleft()
-            print(node)
+            print(node , end = " ")
             
             for neighbor in self.graph[node]:
                     if neighbor not in visited:
@@ -30,4 +28,4 @@ class Solution:
 
 
 obj=Solution()
-obj.bfs(5)
+obj.bfs(1)
