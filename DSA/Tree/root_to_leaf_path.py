@@ -5,6 +5,7 @@
 #         self.left = left
 #         self.right = right
 #DFS
+from typing import Optional,List
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
         def bst(node):

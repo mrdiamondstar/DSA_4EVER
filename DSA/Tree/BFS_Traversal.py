@@ -19,7 +19,7 @@ class Solution:
             
         while q:
             level=[]
-            level_size=len(q)
+            level_size=len(q)                               
 
             for _ in range(level_size):
 

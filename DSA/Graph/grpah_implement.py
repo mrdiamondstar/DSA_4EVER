@@ -5,9 +5,12 @@ class Solution:
         
         neighbor=[[] for _ in range(n)]
         
+        #edges to graph from this for loop
+        #which looks like [[],[],[],[],[]]
         for u, v in edges:
             neighbor[u].append(v)
             neighbor[v].append(u)
+            
         print('adjacency matrix')
         
         for i in range(n):
